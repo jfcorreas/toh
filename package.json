@@ -1,0 +1,22 @@
+{
+  "name": "toh",
+  "version": "0.0.1",
+  "description": "The Offer Hunter",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jfcorreas/toh.git"
+  },
+  "author": "@jfcorreas",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/jfcorreas/toh/issues"
+  },
+  "homepage": "https://github.com/jfcorreas/toh#readme"
+}

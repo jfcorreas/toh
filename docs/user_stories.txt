@@ -1,0 +1,17 @@
+Story: acechar un artículo
+
+As a usuario
+In order to comprar un artículo al mejor precio
+I want to vigilar las variaciones de precio de un artículo
+
+Scenario 1: comenzar a vigilar un artículo
+Given un artículo que quiero vigilar en una tienda
+And habiendo copiado la URL del artículo
+When añado la URL a la aplicación
+And selecciono la tienda correspondiente
+Then el artículo comienza a ser vigilado
+
+Scenario 2: consultar el precio de mis artículos
+Given uno o varios artículos que tengo en vigilancia
+When accedo a los artículos vigilados
+Then veo la lista de mis artículos vigilados y sus precios actuales
