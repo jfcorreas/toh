@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "karma start"
+    "test": "jasmine"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/jfcorreas/toh/issues"
   },
-  "homepage": "https://github.com/jfcorreas/toh#readme"
+  "homepage": "https://github.com/jfcorreas/toh#readme",
+  "devDependencies": {
+    "jasmine": "^2.5.2"
+  }
 }
