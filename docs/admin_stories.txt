@@ -1,12 +1,19 @@
-Story: configurar tienda/artículo
+Story 1: configurar tienda/artículo
 
 As a administrador
 In order to poder extraer el precio y descuento de un artículo
 I want to configurar la URL y etiquetas necesarias de la tienda/artículo
 
-Scenario 1: añadir una tienda/artículo
+Scenario 1: añadir una tipo de artículo
+Given que por defecto de cualquier artículo se almacenará su nombre y precio
+Given la información que interesa recabar de un tipo de artículo
+When introduzco el tipo de artículo en la aplicación
+And introduzco los campos adicionales a almacenar de un artículo (por ejemplo, resolución)
+Then el nuevo artículo estará disponible para vigilarlo en una tienda
+
+Scenario 2: añadir una tienda/artículo
 Given un tipo de artículos de una tienda online
-And habiendo averiguado los tags que encierran el nombre, precio y descuento del artículo
+And habiendo averiguado los tags que encierran el nombre y precio del artículo
 When introduzco la tienda en la aplicación
 And introduzco los tags del nombre
 And introduzco los tags del precio

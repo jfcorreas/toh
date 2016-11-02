@@ -1,4 +1,4 @@
-Story: acechar un artículo
+Story 1: acechar un artículo
 
 As a usuario
 In order to comprar un artículo al mejor precio
