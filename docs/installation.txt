@@ -2,29 +2,3 @@ git clone https://github.com/jfcorreas/toh.git
 npm init
 npm install --save-dev jasmine
 node_modules/jasmine/bin/jasmine.js init
-
-npm install --save @angular/common
-npm install --save @angular/core
-npm install --save @angular/compiler
-npm install --save rxjs
-npm install --save zone.js
-npm install --save rxjs
-npm install --save core-js
-npm install --save @angular/forms
-npm install --save @angular/http
-npm install --save @angular/platform-browser
-npm install --save @angular/platform-browser-dynamic
-npm install --save @angular/router
-npm install --save @angular/upgrade
-npm install --save angular-in-memory-web-api
-npm install --save core-js
-npm install --save reflect-metadata
-npm install --save-dev concurrently
-npm install --save-dev lite-server
-npm install --save-dev litle-server
-sudo npm install --save-dev lite-server
-npm install --save system-js
-npm install --save systemjs
-npm install --save-dev @types/core-js
-npm install --save-dev @types/node
-npm install --save-dev typescript
