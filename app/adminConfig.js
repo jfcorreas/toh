@@ -1,9 +1,12 @@
+'use strict';
+
+var itemTypes = [];
+
 module.exports = {
-  itemType: "",
   addItemType: function (newType) {
-    itemType = newType;
+    itemTypes.push(newType);
   },
-  getItemType: function () {
-    return itemType;
+  getItemTypes: function () {
+    return itemTypes;
   }
 }

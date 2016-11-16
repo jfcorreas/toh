@@ -4,7 +4,7 @@ As a administrador
 In order to poder extraer el precio y descuento de un artículo
 I want to configurar la URL y etiquetas necesarias de la tienda/artículo
 
-Scenario 1: añadir una tipo de artículo
+Scenario 1: añadir un tipo de artículo
 Given que por defecto de cualquier artículo se almacenará su nombre y precio
 Given la información que interesa recabar de un tipo de artículo
 When introduzco el tipo de artículo en la aplicación
