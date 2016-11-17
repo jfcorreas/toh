@@ -5,17 +5,22 @@ In order to poder extraer el precio y descuento de un artículo
 I want to configurar la URL y etiquetas necesarias de la tienda/artículo
 
 Scenario 1: añadir un tipo de artículo
-Given que por defecto de cualquier artículo se almacenará su nombre y precio
-Given la información que interesa recabar de un tipo de artículo
+.Given que por defecto de cualquier artículo se almacenará su nombre y precio
+.Given la información que interesa recabar de un tipo de artículo
 When introduzco el tipo de artículo en la aplicación
 And introduzco los campos adicionales a almacenar de un artículo (por ejemplo, resolución)
 Then el nuevo artículo estará disponible para vigilarlo en una tienda
 
-Scenario 2: añadir una tienda/artículo
-Given un tipo de artículos de una tienda online
-And habiendo averiguado los tags que encierran el nombre y precio del artículo
+Scenario 2: añadir una tienda
+Given una tienda online
 When introduzco la tienda en la aplicación
+Then la nueva tienda está disponible para registrar artículos
+
+Scenario 3: añadir un artículo
+Given un tipo de artículos de una tienda online concreta
+And habiendo averiguado los tags que encierran el nombre y precio del artículo
+When introduzco la tienda y el tipo de artículo
 And introduzco los tags del nombre
 And introduzco los tags del precio
 And introduzco los tags del descuento
-Then la nueva tienda/artículo está disponible para los usuarios
+Then el nueva artículo está disponible para los usuarios
