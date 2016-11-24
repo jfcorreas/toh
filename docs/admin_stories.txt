@@ -18,9 +18,9 @@ Then la nueva tienda está disponible para registrar artículos
 
 Scenario 3: añadir un artículo
 Given un tipo de artículos de una tienda online concreta
-And habiendo averiguado los tags que encierran el nombre y precio del artículo
+And habiendo averiguado las expresiones regulares que encierran el nombre y precio del artículo
 When introduzco la tienda y el tipo de artículo
-And introduzco los tags del nombre
-And introduzco los tags del precio
-And introduzco los tags del descuento
-Then el nueva artículo está disponible para los usuarios
+And introduzco la ER del nombre
+And introduzco la ER del precio
+And introduzco la ER del descuento
+Then el nuevo artículo está disponible para los usuarios

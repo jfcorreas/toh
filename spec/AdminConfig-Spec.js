@@ -26,9 +26,25 @@ describe("1. Añadir un tipo de artículo", function() {
 var Store = require('../app/model/Store.js');
 
 describe("2. Añadir una tienda", function() {
-  it ("2.2. Una tienda tiene nombre y lista de artículos", function() {
-    let store = new Store("tienda", [1,2,3,4]);
+  it ("2.1. Una tienda tiene nombre y lista de artículos", function() {
+    let store = new Store("tienda");
     expect(store.name).toEqual(jasmine.any(String));
-    expect(store.articles).toEqual(jasmine.any(Array));
+  });
+});
+
+var Article = require('../app/model/Article.js');
+
+describe("3. Añadir un artículo", function() {
+  it ("3.1. Un artículo tiene tipo, tienda, nombre, precio y descuento", function() {
+    let article = new Article("videojuego", "tienda", "articulo", 10, 15);
+    expect(article.type).toEqual(jasmine.any(String));
+    expect(article.store).toEqual(jasmine.any(String));
+    expect(article.name).toEqual(jasmine.any(String));
+    expect(article.price).toEqual(jasmine.any(Number));
+    expect(article.discount).toEqual(jasmine.any(Number));
+  });
+  it ("3.2. Mantiene los artículos registrados", function(){
+  //  expect(admin.getArticles).toBeDefined();
+  //  expect(admin.getArticles()).toEqual(jasmine.any(Array));
   });
 });

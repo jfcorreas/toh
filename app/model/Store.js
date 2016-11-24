@@ -1,9 +1,8 @@
 'use strict';
 
 class Store {
-  constructor(name, articles){
+  constructor(name){
     this.name = name;
-    this.articles = articles;
   }
 }
 
